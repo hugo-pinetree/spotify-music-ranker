@@ -1,0 +1,84 @@
+.rec {
+    color: white;
+   font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    padding: 0;
+    border: none;
+    
+    background: none;  
+    position: relative;
+}
+
+.invisible-line{
+   content: "";
+    position: relative;
+    
+    
+   
+    height: 2px;
+    
+    background: white;
+    
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .25s linear;
+  
+}
+ .line {
+  content: "";
+    position: relative;
+    
+    
+   
+    height: 2px;
+    
+    background: white;
+    
+    border-radius: 5px;
+    
+  transform: scaleX(1);
+  transition: .25s linear;
+   
+  }
+
+ 
+ 
+.sidenav{
+    
+    height: 100%;
+    min-height: 500px;
+    max-height: 600px;
+    min-width:  200px;
+    max-width:300px;
+    width: 43%;
+    float:left;
+    
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+}
+.caption1{
+  color:#795721;
+  bottom: -5px;
+  font-size: 8px;
+  left: 10px;
+  position: absolute;
+}
+
+
+.side-nav-buttons{
+   position: absolute;
+   top:120px;
+   
+   position: fixed;  
+}
+.container{  
+  width: 100%;
+  margin-top: 20%;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
