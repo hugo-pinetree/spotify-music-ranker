@@ -19,6 +19,7 @@
 }
 .welcome{
     float:left;
+    position: relative;
 }
 .about-me{
     margin-left:10%;
