@@ -1,26 +1,21 @@
 .title{
     color:whitesmoke;
-    margin-left: 10%;
-   
-    margin-top: 7%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .sub-heading-text{
     color:#a7a7a7;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10%;
-    margin-top: 8%;
     font-size: 17px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .h2-heading-text{
     color: rgb(138, 131, 131);
-
 }
 .welcome{
-    float:left;
-    position: relative;
-}
-.about-me{
-    margin-left:10%;
+    position: absolute;
+    left: 25%;
+    top: 3%
 }

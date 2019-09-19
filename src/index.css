@@ -13,67 +13,51 @@
 .invisible-line{
    content: "";
     position: relative;
-    
-    
-   
-    height: 2px;
-    
-    background: white;
-    
+    height: 2px; 
+    background: white; 
     border-radius: 5px;
     visibility: hidden;
     transform: scaleX(0);
     transition: .25s linear;
-  
 }
  .line {
-  content: "";
+    content: "";
     position: relative;
-    
-    
-   
     height: 2px;
-    
     background: white;
-    
     border-radius: 5px;
-    
-  transform: scaleX(1);
-  transition: .25s linear;
-   
+    transform: scaleX(1);
+    transition: .25s linear;
   }
-
- 
- 
 .sidenav{
-    
-    height: 100%;
-    min-height: 500px;
-    max-height: 600px;
-    min-width:  200px;
-    max-width:300px;
-    width: 43%;
-    float:left;
-    
-    z-index: 1;
+    height: 100vh;
+     width: 43vh;
+     overflow-x: hidden;
+    overflow-y: hidden;
     top: 0;
     left: 0;
+    z-index: 1;
+    position: fixed;
     
+    
+    
+    
+   
 }
 .caption1{
   color:#795721;
   bottom: -5px;
   font-size: 8px;
   left: 10px;
-  position: absolute;
+  
 }
 
 
 .side-nav-buttons{
    position: absolute;
-   top:120px;
-   
-   position: fixed;  
+   top: 20%;
+ 
+    
 }
 .container{  
   width: 100%;
@@ -81,7 +65,32 @@
   text-align: center;
   margin-left: 50%;
   margin-right: 50%;
+  
+  
+  
 }
 .btn-login-link{
   position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.tb{
+  position: absolute;
+  left:25%;
+  top: 70%;
+  width: 70%;
+}
+.rightside{
+  height: 100vh;
+  width: 10vh;
+  float:right;
+}
+.goo{
+  filter: blur(8px) ;
+  
+}
+.toolbar{
+  position: absolute;
+  left:25%;
+  top: 60%;
 }

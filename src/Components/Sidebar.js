@@ -62,15 +62,10 @@ class SideLink extends React.Component {
     }
 }
 export default class Sidebar extends React.Component{
-    scrollWin() {
-        window.scrollBy(20, 0);
-        
-    }
     render(){
-       
         return(
             <div className='sidenav'>
-                <img width='100%' height='100%'src={portrait} alt=''/>
+                <img className='goo' width='100%' height='100%'src={portrait} alt=''/>
                 <div className='side-nav-buttons'>
                     <SideLink label='Welcome'></SideLink>
                    
