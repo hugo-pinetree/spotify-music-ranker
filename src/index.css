@@ -71,15 +71,17 @@
 }
 .btn-login-link{
   position: absolute;
-  top: 30%;
-  left: 25%;
+  top: 45%;
+  left: 46%;
 }
 .tb{
   position: absolute;
-  left:25%;
-  top: 70%;
+  left:30%;
+  top: 26%;
   width: 70%;
+  
 }
+
 .rightside{
   height: 100vh;
   width: 10vh;
@@ -91,6 +93,37 @@
 }
 .toolbar{
   position: absolute;
-  left:25%;
-  top: 60%;
+  left:29%;
+  top: 16%;
+}
+.white{
+  color: white;
+  left: 50%;
+}
+.artist-text{
+  color: rgb(186, 186, 186);
+}
+
+.header{
+  background-image: linear-gradient(to right, rgba(209, 105, 105), rgb(243, 148, 148));
+  border-radius: 25px;
+  width: 70%;
+  height: 300px;
+  margin-left: 25%;
+  margin-top: 10%;
+  position: relative;
+}
+.category{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 50%;
+  color: white;
+}
+.title2{
+  color:whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 29%;
+
 }

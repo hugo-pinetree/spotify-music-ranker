@@ -4,7 +4,7 @@ import Welcome from './Components/Welcome';
 import Collection from './Components/Collection';
 import * as $ from "jquery";
 import {client_id, redirect_uri, auth_endpoint, scopes} from './config.js';
-import hash from './hash.js';
+import hash_key from './hash.js';
 //import collection from './vars.js';
 //import rightside from './rightside-img.jpg';
 import './index.css';
@@ -14,44 +14,57 @@ class App extends React.Component{
         super(props);
         this.state = {
           error: null,
-          tracks: [],
-          features: [],
-          token: null
+          tracks: null,
+          token: null,
+          features: null,
+          loaded_features: false
         };
+        
       }
-      componentDidMount(){
-        let _token = hash.hash_key;
+     
 
+
+      
+      componentDidMount(){
+        let _token = hash_key.access_token;
+        
         if(_token){
+          
             this.setState({
                 token: _token
             });
-            this.getTopTracks();
-            this.getFeatures();
+            this.getTracks(_token);
+            
+           
         }
       }
-    getTopTracks(){
+      
+    getTracks(token_){
         let copied_tracks;
         $.ajax({
+            method: 'GET',
             url: 'https://api.spotify.com/v1/me/top/tracks?limit=25&time_range=short_term',
             
             headers: {
-                'Authorization': 'Bearer ' + this.state.token
+                'Authorization': 'Bearer ' + token_
             },
-            success: function(response) {
-                copied_tracks = response.items.slice(0);
+            success: (response)=> {
+                copied_tracks = response.items.slice();
                 this.setState({
                     tracks: copied_tracks
                 })
+               
+                
             }
         });
     }
-    
-    
+
     getFeatures(){
         let ids = '';
         let i = 0;
         let collection;
+        
+        
         for(; i < 25;i++){
             ids = ids + this.state.tracks[i].id; 
             if(i !== 24)
@@ -59,46 +72,49 @@ class App extends React.Component{
         }
         let endpoint = 'https://api.spotify.com/v1/audio-features?ids=' + ids;
         $.ajax({
+            method: 'GET',
             url: endpoint,
             headers: {
                 'Authorization': 'Bearer ' + this.state.token
             },
-            success: function(response) {
-                collection = response.items.slice(0);
+            success: (response) => {
+                collection = response.audio_features.slice(); 
                 this.setState({
+                   loaded_features:true,
                     features: collection
-                })
+                });
             }
+            
 
         });
     }
     render(){
+        if(this.state.tracks && !this.state.loaded_features)
+            this.getFeatures();
         return(
             <div >
-            <Sidebar></Sidebar>
-            <Welcome className='welcome'></Welcome>
-            
+                {this.state.tracks && (<Sidebar></Sidebar>)}
+         
             {!this.state.token && (
-                <a
-                    className='btn btn-outline-success btn-lg btn-login-link'
-                    role='button'
-                    href={`${auth_endpoint}?client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scopes
-                    }&response_type=token&show_dialog=true`}
-                >
-                    Spotify Log In
-                </a>
+                <div>
+                    <Welcome className='welcome'></Welcome>
+                    <a
+                        className='btn btn-outline-success btn-lg btn-login-link'
+                        role='button'
+                        href={`${auth_endpoint}?client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scopes
+                        }&response_type=token&show_dialog=true`}
+                    >
+                        Log In
+                    </a>
+                </div>
                 
           )}
-          <Collection tracks_= {this.state.tracks}
-                        features_ = {this.state.features}
-                        className = 'collection'
-            
-            ></Collection>
-          {this.state.token && (
+          
+          {(this.state.tracks && this.state.features) && (
             <Collection tracks_= {this.state.tracks}
                         features_ = {this.state.features}
                         className = 'collection'
-            
+                       
             ></Collection>
            
           )}

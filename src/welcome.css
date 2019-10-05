@@ -3,19 +3,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 3%;
     padding-bottom: 3%;
+  
 }
 .sub-heading-text{
-    color:#a7a7a7;
+    color:#e3e3e3;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 3%;
     padding-bottom: 3%;
+    
+   
 }
 .h2-heading-text{
     color: rgb(138, 131, 131);
 }
 .welcome{
     position: absolute;
-    left: 25%;
-    top: 3%
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+    top: 3%;
+    
 }
