@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/spotify-music-ranker/static/css/main.14fdcc91.chunk.css",
+    "main.js": "/spotify-music-ranker/static/js/main.cf5d7912.chunk.js",
+    "main.js.map": "/spotify-music-ranker/static/js/main.cf5d7912.chunk.js.map",
+    "runtime~main.js": "/spotify-music-ranker/static/js/runtime~main.14a0d036.js",
+    "runtime~main.js.map": "/spotify-music-ranker/static/js/runtime~main.14a0d036.js.map",
+    "static/js/2.8bee7e79.chunk.js": "/spotify-music-ranker/static/js/2.8bee7e79.chunk.js",
+    "static/js/2.8bee7e79.chunk.js.map": "/spotify-music-ranker/static/js/2.8bee7e79.chunk.js.map",
+    "index.html": "/spotify-music-ranker/index.html",
+    "precache-manifest.75e9487f0c277fdcecf39a63f1c0a3cf.js": "/spotify-music-ranker/precache-manifest.75e9487f0c277fdcecf39a63f1c0a3cf.js",
+    "service-worker.js": "/spotify-music-ranker/service-worker.js",
+    "static/css/main.14fdcc91.chunk.css.map": "/spotify-music-ranker/static/css/main.14fdcc91.chunk.css.map",
+    "static/media/alfonso-scarpa-e12EkMYv44U-unsplash.jpg": "/spotify-music-ranker/static/media/alfonso-scarpa-e12EkMYv44U-unsplash.36ffb61c.jpg"
+  }
+}
