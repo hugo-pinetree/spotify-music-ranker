@@ -2,7 +2,7 @@
   "name": "music-sorting-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://discoveryourmood.com",
+  "homepage": "https://discoveryourmood.com/",
   "dependencies": {
     "jquery": "^3.4.1",
     "react": "^16.9.0",
