@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spotify-music-ranker/precache-manifest.75e9487f0c277fdcecf39a63f1c0a3cf.js"
+  "/spotify-music-ranker/precache-manifest.ee213b86a09f2f0b0861541087aa007c.js"
 );
 
 self.addEventListener('message', (event) => {
