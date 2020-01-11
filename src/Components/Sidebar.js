@@ -58,6 +58,7 @@ export default class Sidebar extends React.Component{
             <div className='sidenav'>
                 <img className='goo' width='100%' height='100%'src={portrait} alt=''/>
                 <div className='side-nav-buttons'>
+                   <SideLink label=''></SideLink>
                     <SideLink label='Log Out'></SideLink>
                    
                 </div>
