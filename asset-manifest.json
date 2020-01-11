@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/spotify-music-ranker/static/css/main.6ec499a1.chunk.css",
-    "main.js": "/spotify-music-ranker/static/js/main.d46d5f07.chunk.js",
-    "main.js.map": "/spotify-music-ranker/static/js/main.d46d5f07.chunk.js.map",
-    "runtime~main.js": "/spotify-music-ranker/static/js/runtime~main.14a0d036.js",
-    "runtime~main.js.map": "/spotify-music-ranker/static/js/runtime~main.14a0d036.js.map",
-    "static/js/2.8bee7e79.chunk.js": "/spotify-music-ranker/static/js/2.8bee7e79.chunk.js",
-    "static/js/2.8bee7e79.chunk.js.map": "/spotify-music-ranker/static/js/2.8bee7e79.chunk.js.map",
+    "main.css": "/spotify-music-ranker/static/css/main.e5828a95.chunk.css",
+    "main.js": "/spotify-music-ranker/static/js/main.07d204b0.chunk.js",
+    "main.js.map": "/spotify-music-ranker/static/js/main.07d204b0.chunk.js.map",
+    "runtime-main.js": "/spotify-music-ranker/static/js/runtime-main.9307cb6c.js",
+    "runtime-main.js.map": "/spotify-music-ranker/static/js/runtime-main.9307cb6c.js.map",
+    "static/js/2.3b7a635f.chunk.js": "/spotify-music-ranker/static/js/2.3b7a635f.chunk.js",
+    "static/js/2.3b7a635f.chunk.js.map": "/spotify-music-ranker/static/js/2.3b7a635f.chunk.js.map",
     "index.html": "/spotify-music-ranker/index.html",
-    "precache-manifest.43306a447a67dd136a697f3af2ba2791.js": "/spotify-music-ranker/precache-manifest.43306a447a67dd136a697f3af2ba2791.js",
+    "precache-manifest.db7e34d8f10384ad7bbc817389cae9d6.js": "/spotify-music-ranker/precache-manifest.db7e34d8f10384ad7bbc817389cae9d6.js",
     "service-worker.js": "/spotify-music-ranker/service-worker.js",
-    "static/css/main.6ec499a1.chunk.css.map": "/spotify-music-ranker/static/css/main.6ec499a1.chunk.css.map",
+    "static/css/main.e5828a95.chunk.css.map": "/spotify-music-ranker/static/css/main.e5828a95.chunk.css.map",
+    "static/js/2.3b7a635f.chunk.js.LICENSE": "/spotify-music-ranker/static/js/2.3b7a635f.chunk.js.LICENSE",
     "static/media/alfonso-scarpa-e12EkMYv44U-unsplash.jpg": "/spotify-music-ranker/static/media/alfonso-scarpa-e12EkMYv44U-unsplash.36ffb61c.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9307cb6c.js",
+    "static/js/2.3b7a635f.chunk.js",
+    "static/css/main.e5828a95.chunk.css",
+    "static/js/main.07d204b0.chunk.js"
+  ]
 }
