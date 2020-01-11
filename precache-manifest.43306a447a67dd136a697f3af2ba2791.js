@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f50f99f302791e9f45b32a503f2f0f6",
+    "revision": "1aa0c1bcde889e3622b6704cc2648502",
     "url": "/spotify-music-ranker/index.html"
   },
   {
-    "revision": "6cf5712590b89cf096a4",
-    "url": "/spotify-music-ranker/static/css/main.14fdcc91.chunk.css"
+    "revision": "600f5037ae8df59196d7",
+    "url": "/spotify-music-ranker/static/css/main.6ec499a1.chunk.css"
   },
   {
     "revision": "901e37d9ce6062fb70f7",
     "url": "/spotify-music-ranker/static/js/2.8bee7e79.chunk.js"
   },
   {
-    "revision": "6cf5712590b89cf096a4",
-    "url": "/spotify-music-ranker/static/js/main.70a63e6c.chunk.js"
+    "revision": "600f5037ae8df59196d7",
+    "url": "/spotify-music-ranker/static/js/main.d46d5f07.chunk.js"
   },
   {
     "revision": "084f38d29ad61b395318",
