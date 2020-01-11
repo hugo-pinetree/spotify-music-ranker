@@ -110,7 +110,7 @@ heapify(arr,n,i, categ){
     let smallest = i;
     let l = 2*i + 1;
     let r = 2*i + 2;
-    //if(categ === 'valence'){
+    
       if (l < n && arr[l][categ] < arr[smallest][categ])
         smallest = l;
       if(r < n && arr[r][categ]< arr[smallest][categ])

@@ -11,7 +11,9 @@ function Line(props){
         <div className='line'> </div>
     );
 }
-
+function refreshPage() {
+    window.location.reload(true);
+  }
 class SideLink extends React.Component {
     constructor(props){
         super(props);
@@ -22,27 +24,21 @@ class SideLink extends React.Component {
     handleOnMouseOver(){
         this.setState({
             hovered: true
-        })
-       
+        }) 
     }
     handleOnMouseOut(){
-
-        
         this.setState({
             hovered: false
         })
      
     }
-    
-     
-    
     render(){
         
         return(
             <div className='container'>
                     
                     <div className='go'>
-                        <button className='rec'
+                        <button className='rec' onClick={refreshPage}
                             onMouseOver={()=> this.handleOnMouseOver()}
                             onMouseOut={()=>this.handleOnMouseOut()}  
                         >
@@ -50,14 +46,9 @@ class SideLink extends React.Component {
                         </button>
                         <Line disp={this.state.hovered}></Line>
                         </div>
-                    
-                    
-                
                 
             </div>
-           
-            
-            
+          
         )
     }
 }
@@ -67,12 +58,8 @@ export default class Sidebar extends React.Component{
             <div className='sidenav'>
                 <img className='goo' width='100%' height='100%'src={portrait} alt=''/>
                 <div className='side-nav-buttons'>
-                    <SideLink label='Welcome'></SideLink>
+                    <SideLink label='Log Out'></SideLink>
                    
-                    <SideLink label='Log In'></SideLink>
-                  
-                    <SideLink label='See Moods'></SideLink>
-                 
                 </div>
                 <p className='caption1'>Photo taken by Alfonso Scarpa</p>
             </div>

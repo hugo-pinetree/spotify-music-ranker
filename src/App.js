@@ -22,9 +22,6 @@ class App extends React.Component{
         
       }
      
-
-
-      
       componentDidMount(){
         let _token = hash_key.access_token;
         
@@ -33,9 +30,7 @@ class App extends React.Component{
             this.setState({
                 token: _token
             });
-            this.getTracks(_token);
-            
-           
+            this.getTracks(_token); 
         }
       }
       
